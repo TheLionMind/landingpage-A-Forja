@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Landing Page Profissional</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1D4ED8', // Azul destaque
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="corpo-produtos">
+
+  <!-- Header fixo -->
+  <header class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+      <!-- Logo -->
+      <div class="flex justify-center flex-1">
+        <img src="logo.png" alt="Logo" class="logo">
+        <h1 class="aforja">A Forja</h1>
+      </div>
+
+      <!-- Botão menu -->
+      <div class="md:hidden flex items-center">
+        <button id="menu-btn" class="flex flex-col gap-1">
+          <span class="block w-6 h-0.5 bg-gray-800"></span>
+          <span class="block w-6 h-0.5 bg-gray-800"></span>
+          <span class="block w-6 h-0.5 bg-gray-800"></span>
+        </button>
+      </div>
+
+      <!-- Menu Desktop -->
+      <nav class="hidden md:flex gap-8 text-gray-700 font-medium">
+        <a href="#home" class="hover:text-primary transition">Home</a>
+        <a href="#produtos" class="hover:text-primary transition">Produtos</a>
+        <a href="#contato" class="hover:text-primary transition">Contato</a>
+        <a href="#sobre" class="hover:text-primary transition">Sobre Nós</a>
+      </nav>
+    </div>
+
+    <!-- Menu Mobile -->
+    <div id="menu-mobile" class="hidden flex-col bg-white shadow-lg px-6 py-4 space-y-4 md:hidden">
+      <a href="#home" class="block text-gray-700 hover:text-primary transition">Home</a>
+      <a href="#produtos" class="block text-gray-700 hover:text-primary transition">Produtos</a>
+      <a href="#contato" class="block text-gray-700 hover:text-primary transition">Contato</a>
+      <a href="#sobre" class="block text-gray-700 hover:text-primary transition">Sobre Nós</a>
+    </div>
+  </header>
+
+  <!-- Espaço para compensar o header fixo -->
+  <div class="h-20"></div>
+
+  <!-- Main -->
+  <main class="flex-1 px-6 py-10 bg-gray-50" id="home">
+
+    <section class="bem-vindos">
+      <h1 class="text-4xl font-bold mb-4 text-gray-800">Bem-vindo à nossa loja!</h1>
+      <p class="text-lg text-gray-600">Os melhores produtos, qualidade garantida.</p>
+    </section>
+
+    <!-- Produtos -->
+    <section id="nossos-produtos" class="max-w-7xl mx-auto ">
+      <h2 class="text-3xl font-bold mb-8 mt-10 text-center text-gray-800">Nossos Produtos</h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <!-- Produto -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+          <img src="7 habitos.png" alt="Produto 1" class="w-full h-80 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">7 Hábitos que Moldam uma Mente Imparável</h3>
+            <p class="text-gray-600 mb-4">Descubra os 7 hábitos que transformam pessoas comuns em máquinas de realização. Domine sua mente, conquiste seus objetivos e seja imparável. O sucesso começa nas pequenas ações diárias — aprenda a dominar as suas!</p>
+            <p class="preco">R$ 29,90</p>
+            <button 
+  onclick="window.location.href='https://pay.kiwify.com.br/5j5AUuS'" 
+  class="w-full bg-green-600 text-white py-2 rounded hover:bg-green-400 transition-all duration-300 transform hover:scale-105 active:scale-95">
+  Comprar
+</button>
+
+          </div>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+          <img src="alpha 2.0.png" alt="Produto 2" class="w-full h-80 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Alpha 2.0: A Nova Era da Autossuficiência e Poder Pessoal</h3>
+            <p class="text-gray-600 mb-4">O mundo mudou, e o verdadeiro alfa evoluiu. Conheça o Alpha 2.0: um ser livre, inabalável e totalmente dono da sua realidade. Se você quer viver no controle absoluto da sua vida. Este é o manual que você precisa.</p>
+            <p class="preco">R$ 29,90</p>
+            <button 
+  onclick="window.location.href='https://pay.kiwify.com.br/oEliTvr'" 
+  class="w-full bg-green-600 text-white py-2 rounded hover:bg-green-400 transition-all duration-300 transform hover:scale-105 active:scale-95">
+  Comprar
+</button>
+          </div>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+          <img src="Disciplina inquebravel.png" alt="Produto 3" class="w-full h-80 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Disciplina Inquebrável: O Código da Execução Sem Desculpas</h3>
+            <p class="text-gray-600 mb-4">Disciplina não é talento — é uma escolha diária. Este guia vai explodir suas desculpas, blindar sua força de vontade e te ensinar como agir todos os dias, mesmo quando a motivação sumir. Quem domina a disciplina, domina o mundo.</p>
+            <p class="preco">R$ 29,90</p>
+            <button 
+  onclick="window.location.href='https://pay.kiwify.com.br/84GhtoK'" 
+  class="w-full bg-green-600 text-white py-2 rounded hover:bg-green-400 transition-all duration-300 transform hover:scale-105 active:scale-95">
+  Comprar
+</button>
+          </div>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+          <img src="do caos a clareza.png" alt="Produto 4" class="w-full h-80 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Do Caos à Clareza: Como Transformar Crise em Crescimento</h3>
+            <p class="text-gray-600 mb-4">A vida é feita de tempestades. Quem sobrevive? Quem sabe transformar caos em direção. Aprenda a encontrar lucidez no meio da bagunça, criar planos em meio à dúvida e crescer enquanto os outros desmoronam.</p>
+            <p class="preco">R$ 29,90</p>
+            <button 
+  onclick="window.location.href='https://pay.kiwify.com.br/ouETZkp'" 
+  class="w-full bg-green-600 text-white py-2 rounded hover:bg-green-400 transition-all duration-300 transform hover:scale-105 active:scale-95">
+  Comprar
+</button>
+          </div>
+        </div>
+
+        <!-- Produto 5 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+          <img src="o codigo da auto confiança.png" alt="Produto 5" class="w-full h-80 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">O Código da Autoconfiança: Liberte Seu Potencial Escondido</h3>
+            <p class="text-gray-600 mb-4">Confiança não é dom — é construção. Decifre o código para se tornar inabalável, deixar o medo no retrovisor e agir com coragem em qualquer situação. Uma vez desbloqueada, sua autoconfiança será sua arma mais letal.</p>
+            <p class="preco">R$ 29,90</p>
+            <button 
+  onclick="window.location.href='https://pay.kiwify.com.br/6CbQGeq'" 
+  class="w-full bg-green-600 text-white py-2 rounded hover:bg-green-400 transition-all duration-300 transform hover:scale-105 active:scale-95">
+  Comprar
+</button>
+          </div>
+        </div>
+
+        <!-- Produto 6 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+          <img src="coleção.png" alt="Produto 6" class="w-full h-80 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Coleção Completa: 5 Obras para Desbloquear Seu Potencial Máximo</h3>
+            <p class="text-gray-600 mb-4">Uma seleção matadora de livros que vão reprogramar sua mente para a excelência. Desenvolvimento pessoal, disciplina, liderança e clareza mental — tudo o que você precisa para sair da média e construir a sua melhor versão. É agora ou nunca.</p>
+            <p class="preco">R$ 89,90</p>
+            <button 
+  onclick="window.location.href='https://pay.kiwify.com.br/s9l1hrI'" 
+  class="w-full bg-green-600 text-white py-2 rounded hover:bg-green-400 transition-all duration-300 transform hover:scale-105 active:scale-95">
+  Comprar
+</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="mt-16 text-center">
+      <h2 class="text-3xl font-bold mb-6 text-gray-800">Fale Conosco</h2>
+      <p class="text-gray-600">Entre em contato pelo WhatsApp ou pelas nossas redes sociais.</p>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="mt-16 text-center">
+      <h2 class="text-3xl font-bold mb-6 text-gray-800">Sobre Nós</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">Somos apaixonados por oferecer produtos de qualidade com preços justos. Seu sucesso é o nosso sucesso!</p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="flex items-center gap-3">
+        <img src="logo.png" alt="Logo" class="logo">
+        <p>© 2025 Todos os direitos reservados.</p>
+      </div>
+
+      <div class="flex gap-6">
+        <a href="#" class="hover:text-primary transition">
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+            <path d="M22 12c0-5.522-4.478-10-10-10S2 6.478 2 12c0 5 3.657 9.127 8.438 9.878v-6.987h-2.54v-2.891h2.54V9.845c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.242 0-1.63.771-1.63 1.562v1.875h2.773l-.443 2.891h-2.33v6.987C18.343 21.127 22 17 22 12z"/>
+          </svg>
+        </a>
+        <a href="#" class="hover:text-primary transition">
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+            <path d="M24 4.557a9.828 9.828 0 01-2.828.775 4.932 4.932 0 002.165-2.724 9.86 9.86 0 01-3.127 1.195 4.916 4.916 0 00-8.379 4.482C7.691 8.094 4.066 6.13 1.64 3.161a4.822 4.822 0 00-.666 2.475 4.916 4.916 0 002.188 4.096 4.902 4.902 0 01-2.228-.616v.062a4.919 4.919 0 003.946 4.827 4.996 4.996 0 01-2.224.084 4.924 4.924 0 004.604 3.417 9.867 9.867 0 01-6.102 2.104c-.396 0-.788-.023-1.176-.068a13.945 13.945 0 007.548 2.212c9.057 0 14.01-7.513 14.01-14.01 0-.213-.005-.425-.014-.636A10.025 10.025 0 0024 4.557z"/>
+          </svg>
+        </a>
+        <a href="#" class="hover:text-primary transition">
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+            <path d="M12 0C5.372 0 0 5.372 0 12c0 5.302 3.438 9.8 8.205 11.387.6.111.82-.261.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.832 2.809 1.302 3.495.995.107-.776.419-1.303.762-1.603-2.665-.305-5.466-1.333-5.466-5.931 0-1.311.469-2.382 1.236-3.222-.123-.304-.536-1.527.117-3.176 0 0 1.008-.322 3.301 1.23a11.5 11.5 0 013.003-.404c1.018.004 2.043.137 3.003.404 2.291-1.552 3.297-1.23 3.297-1.23.655 1.649.242 2.872.119 3.176.77.84 1.235 1.911 1.235 3.222 0 4.609-2.803 5.624-5.475 5.921.43.371.814 1.102.814 2.222v3.293c0 .32.218.694.825.576C20.565 21.796 24 17.298 24 12c0-6.628-5.372-12-12-12z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS do Menu Mobile -->
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu-mobile');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+      menu.classList.toggle('flex');
+    });
+  </script>
+
+</body>
+</html>
